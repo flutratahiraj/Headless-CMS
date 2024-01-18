@@ -4,6 +4,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
+  "component---cache-dev-404-page-js": preferDefault(require("C:\\Users\\Flutra\\Documents\\FEU-22\\CMS\\headless CMS\\myProject-headlessCMS\\lekplats-gatsby\\.cache\\dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("C:\\Users\\Flutra\\Documents\\FEU-22\\CMS\\headless CMS\\myProject-headlessCMS\\lekplats-gatsby\\src\\pages\\404.js")),
   "component---src-pages-index-js": preferDefault(require("C:\\Users\\Flutra\\Documents\\FEU-22\\CMS\\headless CMS\\myProject-headlessCMS\\lekplats-gatsby\\src\\pages\\index.js")),
   "component---src-pages-kontakt-js": preferDefault(require("C:\\Users\\Flutra\\Documents\\FEU-22\\CMS\\headless CMS\\myProject-headlessCMS\\lekplats-gatsby\\src\\pages\\kontakt.js")),
