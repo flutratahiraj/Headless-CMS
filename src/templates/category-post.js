@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { Link } from "gatsby";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 const CategoryPage = ({ data }) => {
   // const blogPosts = data.allContentfulBlog ? data.allContentfulBlog.nodes : [];

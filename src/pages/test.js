@@ -1,7 +1,7 @@
 /*Min CoffeeSida*/
 import { graphql, Link } from "gatsby";
 import React from "react";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import CategoryList from "../components/CategoryList";
 
 const Test = ({ data }) => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Arbete from "../components/arbete";
 import Utbildning from "../components/utbildning";
 import {
