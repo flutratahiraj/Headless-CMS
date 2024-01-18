@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+* {
+  /* margin: 0; */
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+html,
+body {
+  min-height: 100%;
+  padding: 20px;
+}
+
+body {
+  /*background: radial-gradient(
+    at top left,
+    rgba(255, 10, 10, 0) 0%,);
+*/
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  gap: 10px;
+}
+h1 {
+  color: #a6814c;
+}
+
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+  color: #333;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #1a1a1a;
+  align-items: center;
+}
+
+nav .links {
+  display: inline-block;
+  text-align: right;
+}
+
+nav a {
+  margin-left: 20px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  color: #ffd700;
+}
+nav h1 {
+  margin-left: 20px;
+}
+
+nav a:hover {
+  border-color: #5e4934;
+}
+
+ul {
+  /* list-style-image: url("../images/coffee-beans_3219300.png"); */
+  list-style: none;
+}
+/* kaffekoppsikonen */
+.coffee-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+#bottomNav {
+  background-color: #1a1a1a;
+  text-align: center;
+  color: #dd1616;
+  margin: 40px auto;
+}
+#topNav {
+  background-color: #0f3eac;
+}
+
+.full-height-container {
+  min-height: 100vh; /* 100% av visningsområdets höjd */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
