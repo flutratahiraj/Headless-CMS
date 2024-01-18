@@ -1,6 +1,6 @@
 // Layout.js
 import React, { useEffect } from "react";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import "../styles/global.css";
 import Footer from "./Footer";
 import AOS from "aos";

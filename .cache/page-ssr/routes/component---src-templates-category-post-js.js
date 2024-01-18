@@ -2548,9 +2548,9 @@ function Footer() {
 
 /***/ }),
 
-/***/ "./src/components/layout.js":
+/***/ "./src/components/Layout.js":
 /*!**********************************!*\
-  !*** ./src/components/layout.js ***!
+  !*** ./src/components/Layout.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -2646,7 +2646,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _contentful_rich_text_react_renderer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @contentful/rich-text-react-renderer */ "./node_modules/@contentful/rich-text-react-renderer/dist/rich-text-react-renderer.es5.js");
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
 
 
 
@@ -2656,7 +2656,7 @@ const CategoryPage = ({
 }) => {
   // const blogPosts = data.allContentfulBlog ? data.allContentfulBlog.nodes : [];
   const categoryData = data.allContentfulKaffefilosofi.nodes;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", {
     className: ""
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Vald Kategori: ", categoryData[0].category), data.allContentfulKaffefilosofi.nodes.map(({
     id,
