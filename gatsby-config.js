@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        accessToken: "LLfUL225ByvjBTLDM6iScsby5y9mQokeQerj9lgWJb4",
-        spaceId: "2iaxjppo93wa",
+        accessToken: "REACT_APP_ACCESS_TOKEN",
+        spaceId: "REACT_APP_SPACE_ID",
       },
     },
     "gatsby-plugin-image",
