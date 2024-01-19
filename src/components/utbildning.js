@@ -1,7 +1,8 @@
 import React from "react";
 // import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
+/*GatsbyImage för bildoptimering, alt med titel som värde.
+Men alt-attributer kan lämnas tomma och ändå höja tillgänligheten*/
 const Arbete = ({ data }) => {
   const nodes = data.allContentfulUtbildning.nodes;
   // Inline CSS-stilar som en JavaScript-objekt

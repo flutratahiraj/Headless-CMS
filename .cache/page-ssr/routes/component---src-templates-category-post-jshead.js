@@ -2520,7 +2520,7 @@ function stripPrefix(str, prefix = ``) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Footer)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -2530,7 +2530,35 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Footer() {
+// import Search from "./search";
+
+// const Footer = () => (
+// export default function Footer() {
+const Footer = ({
+  data
+}) => {
+  // <StaticQuery
+  //   query={graphql`
+  //     query SearchIndexQuery {
+  //       siteSearchIndex {
+  //         index
+  //       }
+  //     }
+  //   `}
+  //   render={(data) => (
+  //     <Footer>
+  //       <nav style={{ height: "100px" }}>
+  //         <div style={{ whiteSpace: "nowrap" }}>
+  //           <Link to="/omMig">Om mig</Link>
+  //           <Link to="/kontakt">Kontakta mig</Link>
+  //         </div>
+  //         <div>
+  //           <Search searchIndex={data.siteSearchIndex.index} />
+  //         </div>
+  //       </nav>
+  //     </Footer>
+  //   )}
+  // />
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     style: {
       height: "100px"
@@ -2543,8 +2571,18 @@ function Footer() {
     to: "/omMig"
   }, "Om mig"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/kontakt"
-  }, "Kontakta mig"))));
-}
+  }, "Kontakta mig")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null)));
+};
+// );
+// export const query = graphql`
+//   query MyQuery {
+//     siteSearchIndex {
+//       index
+//     }
+//   }
+// `;
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
 /***/ }),
 
@@ -2561,7 +2599,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ "./src/components/navbar.js");
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./src/components/Navbar.js");
 /* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/global.css */ "./src/styles/global.css");
 /* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_global_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
@@ -2588,7 +2626,7 @@ function Layout({
       flexDirection: "column",
       minHeight: "100vh"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       flex: 1
     }
@@ -2602,9 +2640,9 @@ function Layout({
 
 /***/ }),
 
-/***/ "./src/components/navbar.js":
+/***/ "./src/components/Navbar.js":
 /*!**********************************!*\
-  !*** ./src/components/navbar.js ***!
+  !*** ./src/components/Navbar.js ***!
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

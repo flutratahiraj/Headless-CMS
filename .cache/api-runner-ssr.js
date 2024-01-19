@@ -3,6 +3,10 @@ var plugins = [{
       plugin: require('C:/Users/Flutra/Documents/FEU-22/CMS/headless CMS/myProject-headlessCMS/lekplats-gatsby/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-react-helmet',
+      plugin: require('C:/Users/Flutra/Documents/FEU-22/CMS/headless CMS/myProject-headlessCMS/lekplats-gatsby/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
       name: 'partytown',
       plugin: require('C:/Users/Flutra/Documents/FEU-22/CMS/headless CMS/myProject-headlessCMS/lekplats-gatsby/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},

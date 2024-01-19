@@ -94,8 +94,14 @@ ul {
 }
 
 .full-height-container {
-  min-height: 100vh; /* 100% av visningsområdets höjd */
+  /*min-height: 100vh; /* 100% av visningsområdets höjd */
   /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }

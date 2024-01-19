@@ -2,12 +2,19 @@
 import { graphql, Link } from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { Helmet } from "react-helmet";
 
 const IndexPage = ({ data }) => {
   const projects = data.allContentfulKaffefilosofi.edges;
   return (
     <Layout>
+      <Helmet>
+        <title>{data.contentfulStartsida.rubrik}</title>
+        <meta
+          name="description"
+          content={data.contentfulStartsida.presentationstext}
+        />
+      </Helmet>
       <div
         className="container"
         style={{

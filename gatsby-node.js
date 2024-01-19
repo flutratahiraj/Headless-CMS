@@ -9,28 +9,28 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const OmMigPost = path.resolve("./src/pages/omMig.js");
 
   const result = await graphql(`
-  {
-        allContentfulKaffefilosofi {
-          nodes {
-            title
-            slug
-            category
-          }
+    {
+      allContentfulKaffefilosofi {
+        nodes {
+          title
+          slug
+          category
         }
-      }`
-  );
+      }
+    }
+  `);
 
   const resultProject = await graphql(`
-  {
-    allContentfulProjektoversiktssida {
-          nodes {
-            title
-            slug
-          }
+    {
+      allContentfulProjektoversiktssida {
+        nodes {
+          title
+          slug
         }
-      }`
-  );
-
+      }
+    }
+  `);
+  // Hantera fel vid hämtning av data från Contentful
   if (result.errors) {
     reporter.panicOnBuild(
       `There was an error loading your Contentful blog posts`,
@@ -46,7 +46,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     );
     return;
   }
-
+  // Skapa sidor för varje blogginlägg
   const blogs = result.data.allContentfulKaffefilosofi.nodes;
   if (blogs.length > 0) {
     blogs.forEach((blog) => {
@@ -59,7 +59,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       });
     });
   }
-
+  // Skapa sidor för varje kategori
   const category = result.data.allContentfulKaffefilosofi.nodes;
   if (category.length > 0) {
     category.forEach((blog) => {
@@ -72,7 +72,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       });
     });
   }
-
+  // Skapa sidor för varje projekt
   const projects = resultProject.data.allContentfulProjektoversiktssida.nodes;
   if (projects.length > 0) {
     projects.forEach((project) => {
@@ -85,5 +85,4 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       });
     });
   }
-
 };

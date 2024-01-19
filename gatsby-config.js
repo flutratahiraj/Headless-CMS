@@ -24,6 +24,7 @@ module.exports = {
       }*/
     ],
   },
+
   plugins: [
     {
       resolve: "gatsby-source-contentful",
@@ -36,5 +37,23 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-netlify",
+    "gatsby-plugin-react-helmet",
+
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fält att indexera
+        fields: ["title", "beskrivning", "slug"],
+
+        // Hur man löser varje fälts värde för en understödd nodtyp
+        resolvers: {
+          contentfulProjektoversiktssida: {
+            title: (node) => node.title,
+            beskrivning: (node) => node.beskrivning,
+            slug: (node) => node.slug,
+          },
+        },
+      },
+    },
   ],
 };

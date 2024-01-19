@@ -4,6 +4,9 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../components/Layout";
 import Arbete from "../components/arbete";
 import Utbildning from "../components/utbildning";
+/*Hämtar mina stilar från stylesheet som INTE är den globala filen*/
+/*Graphql frågorna som tillhär mina komponenter ligger i den här filen
+och inte i komponenterna eftersom data skickas upp till föräldern*/
 import {
   mainContainer,
   section,
